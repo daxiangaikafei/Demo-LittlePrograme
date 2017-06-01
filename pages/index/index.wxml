@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <!--<swiper class="music">
+    <view wx:for="{{list}}" wx-for-item="{{item}}">
+      <image class="music-avatar" src="{{item.picUrl}}" background-size="cover"></image>
+      <text class="music-desc">{{item.name}}</text>
+    </view>
+  </swiper>-->
+
+  <swiper indicator-dots="{{indicatorDots}}">
+  <block wx:for="{{list}}" wx-for-item="{{item}}">
+    <swiper-item>
+      <image src="{{item.picUrl}}" class="slide-image" width="355" height="150"/>
+      <text>{{item.name}}</text>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+  <!--<view>
+    <view class="view-demo">{{ title }}</view>
+  </view>
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[8]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>  -->
+<!--</view>-->
+<!--<block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}:{{item}} </view>
+</block>-->
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

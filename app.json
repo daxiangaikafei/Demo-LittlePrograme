@@ -1,6 +1,3 @@
-# LittlePrograme demo 
-demo code for littleprograme.
-app.json:
 {
   "pages":[
     "pages/index/index",
@@ -37,4 +34,3 @@ app.json:
     ]
   }
 }
-
