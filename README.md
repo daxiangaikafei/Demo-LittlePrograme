@@ -1,18 +1,24 @@
 # LittlePrograme demo 
 demo code for littleprograme.
-app.json:
+操作步骤：
++ 打开微信开发者工具
++ 添加本地项目(不需要关联appID)
++ 启动
+
+`app.json`查看:
+```javascript
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index",//page route
+    "pages/logs/logs" //page route
   ],
-  "window":{
+  "window":{ //settings for window
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat Demo for Goods",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
+  "tabBar": {//define tab bar in bottom
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -37,4 +43,4 @@ app.json:
     ]
   }
 }
-
+```
